@@ -1,0 +1,26 @@
+.login-container {
+    width: 400px;
+    margin: 80px auto;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.message {
+    text-align: center;
+    color: red;
+    margin-top: 15px;
+}

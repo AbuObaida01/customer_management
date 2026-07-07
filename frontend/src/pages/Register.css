@@ -1,0 +1,32 @@
+.register-container {
+    width: 400px;
+    margin: 80px auto;
+}
+
+.register-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.register-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.message-success {
+    text-align: center;
+    color: green;
+    margin-top: 15px;
+}
+
+.message-error {
+    text-align: center;
+    color: red;
+    margin-top: 15px;
+}
