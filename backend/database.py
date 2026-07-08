@@ -5,14 +5,14 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 
 from config import(
 DB_USERNAME,
-DG_PASSWORD,
+DB_PASSWORD,
 DB_HOST,
 DB_PORT,
 DB_NAME
 )
 
 DATABASE_URL=(f"mysql+pymysql://"
-              f"{DB_USERNAME}:{DG_PASSWORD}"
+              f"{DB_USERNAME}:{DB_PASSWORD}"
               f"@{DB_HOST}:{DB_PORT}"
               f"/{DB_NAME}")
 
