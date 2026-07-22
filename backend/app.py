@@ -1,10 +1,10 @@
 from fastapi import FastAPI
 from routes.auth_routes import router as auth_router
+from routes.customers_routes import router as customers_router
 from database import Base
 from database import engine
 from fastapi.middleware.cors import CORSMiddleware
 
-from routes.customers_routes import router as customers_router
 app=FastAPI(title="Customer Management API")
 
 app.add_middleware(
@@ -14,7 +14,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 Base.metadata.create_all(bind=engine)
 app.include_router(auth_router)
 app.include_router(customers_router)
